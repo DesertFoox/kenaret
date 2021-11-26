@@ -1,0 +1,99 @@
+/* Put Fonts In Here */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Dana-FaNum-Regular';
+  src: url(./Assets/fonts/Dana-FaNum-Regular.ttf);
+  src: url(./Assets/fonts/Dana-FaNum-Regular.eot?#iefix) format('embedded-opentype'),
+       url(./Assets/fonts/Dana-FaNum-Regular.svg#Dana-FaNum-Regular) format('svg'),
+       url(./Assets/fonts/Dana-FaNum-Regular.ttf) format('truetype'),
+       url(./Assets/fonts/Dana-FaNum-Regular.woff) format('woff'),
+       url(./Assets/fonts/Dana-FaNum-Regular.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Dana-FaNum-Bold';
+  src: url(./Assets/fonts/Dana-FaNum-Bold.ttf);
+  src: url(./Assets/fonts/Dana-FaNum-Bold.eot?#iefix) format('embedded-opentype'),
+       url(./Assets/fonts/Dana-FaNum-Bold.svg#Dana-FaNum-Bold) format('svg'),
+       url(./Assets/fonts/Dana-FaNum-Bold.ttf) format('truetype'),
+       url(./Assets/fonts/Dana-FaNum-Bold.woff) format('woff'),
+       url(./Assets/fonts/Dana-FaNum-Bold.woff2) format('woff2');
+}
+
+.Toastify__toast {min-height: 40px;}
+.Toastify__toast-body { font-family: 'Dana-FaNum-Regular'; font-size: 14px; padding: 0 6px; }
+.slick-slide {border: none !important}
+
+:root {
+  margin: 0;
+  font-family: 'Dana-FaNum-Regular';
+  direction: rtl;
+  box-sizing: border-box;
+}
+
+.kenaret-container {
+  max-width: 640px;
+  margin: auto;
+  height: 100%;
+}
+
+body {
+  overscroll-behavior: contain;
+}
+
+* {
+  outline: none;
+}
+
+@layer utilities {
+  .dir-rtl {
+    direction: rtl;
+  }
+  .dir-ltr {
+    direction: ltr;
+  }
+  .dir-auto {
+    direction: auto;
+  }
+  .h-max {
+    height: max-content;
+  }
+  .h-min {
+    height: min-content;
+  }
+  .max-h-max {
+    max-height: max-content;
+  }
+  .max-h-min {
+    max-height: min-content;
+  }
+
+  @variants responsive, hover, focus {
+    .dir-rtl {
+      direction: rtl;
+    }
+    .dir-ltr {
+      direction: ltr;
+    }
+    .dir-auto {
+      direction: auto;
+    }
+    .h-max {
+      height: max-content;
+    }
+    .h-min {
+      height: min-content;
+    }
+    .max-h-max {
+      max-height: max-content;
+    }
+    .max-h-min {
+      max-height: min-content;
+    }
+  }
+
+
+}
